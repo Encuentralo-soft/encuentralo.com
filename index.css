@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.header .logo h1 {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #49ACF8;   /*#3691EB -- #68cbf7 */
+}
+
+#noline_menu{
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-right: 15px;
+    width: 300px;
+}
+
+.search-bar button {
+    background-color: #68cbf7;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e5474c;
+}
+
+/* Estilos personalizados para la separación */
+.carousel-inner .col {
+    margin: 15px;
+    /* Espacio alrededor de cada card */
+}
+
+/* Estilos del icono de usuario */
+.user-icon {
+    border: 2px solid #49ACF8;
+    border-radius: 50%;
+    padding: 10px;
+    color: #49ACF8;
+    font-size: 1.5rem;
+}
+
+.text-register {
+    color: #49ACF8;
+    /* Color de las letras */
+    margin-right: 10px;
+    /* Espacio entre el texto y el ícono */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-icon {
+    font-size: 18px;
+    /* Tamaño del ícono */
+    color: #49ACF8;
+    /* Asegúrate que el color del ícono coincida con el texto */
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+#submenu_categorias li, img{
+    padding: 6px;
+}
+
+/* Estilos para el menú de categorías */
+.nav-categories {
+    display: flex;
+    margin: 20px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.category-list li {
+    display: flex;
+    align-items: center;
+
+}
+
+.category-list li a {
+    text-decoration: none;
+    color: #49ACF8;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#accion_favoritos{
+    margin-left: auto; /* Empuja el menú a la derecha */
+}
+
+/* Estilos para el botón de favoritos */
+.fav-button {
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.fav-button:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#btn_cerrar_favo{
+    background-color: #68cbf7;
+    border: #49ACF8;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+/* Espaciado de las cards en el contenedor */
+.carousel-inner {
+    padding: 20px 40px;
+    /* Separar las cards de los bordes del sitio */
+}
+
+/* Tamaño reducido de las columnas para que más tarjetas sean visibles */
+.carousel-inner .col {
+    flex: 0 0 20%;
+    /* Ajusta el tamaño de las tarjetas a 20% del carrusel */
+}
+
+/* Controles fuera de las tarjetas */
+/* .carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Control más pequeño 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: -50px; /* Mover el control izquierdo fuera del área de las tarjetas 
+} */
+
+/* .carousel-control-next {
+    right: -50px; /* Mover el control derecho fuera del área de las tarjetas 
+} */
+
+#color_vermas_but {
+    background-color: #49ACF8;
+    border: #49ACF8;
+}
+
+
+.custom-control {
+    top: 50%;
+    /* Ajusta el rango vertical para que no interfiera */
+    width: 40px;
+    /* Ajusta el tamaño de los controles */
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 100%, 100%;
+}
+
+.carousel-inner {
+    margin-bottom: 20px;
+    /* Espacio adicional debajo del carrusel para no interferir con otros elementos */
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn-close {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Color del botón cerrar del modal */
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* Borde de las tarjetas */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* ESTILO PARA GALERIA IMAGNES */
+/* Estilos para la galería en el modal */
+
+.modal-lg {
+    max-width: 800px; /* o el ancho que prefieras */
+}
+
+.carousel-indicators {
+    bottom: -50px; /* mueve los indicadores debajo de la imagen */
+}
+
+.carousel-indicators button {
+    background-color: #666; /* color de los indicadores inactivos */
+}
+
+.carousel-indicators .active {
+    background-color: #000; /* color del indicador activo */
+}
+
+.modal-text {
+    margin-top: 2rem; /* espacio entre la galería y el texto */
+    padding: 0 1rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* ESTILO PARA BUSCADOR  */
+
+.results-container {
+    position: relative;
+    top: 100%; /* Justo debajo del buscador */
+    left: 0;
+    right: 0;
+    background-color: #add5f3;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    max-height: 300px; /* Altura máxima */
+    overflow-y: auto; /* Permite el desplazamiento si hay muchos resultados */
+}
+
+.result-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.result-item:hover {
+    background-color: #7a9ce6; /* Color de fondo al pasar el mouse */
+    border-radius: 2px;
+}
+
+#map {
+	height: 400px;
+	width: 50%;
+}
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */

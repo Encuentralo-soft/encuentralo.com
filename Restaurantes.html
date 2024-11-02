@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentralo | Destinos rapidos</title>
+    <link rel="icon" href="img/Proyecto Quitar fondo logo E.ico" type="image/png">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace al CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo E.png" alt="Encuentralo Logo">
+            </a><a id="noline_menu" href="index.html"><h1>encuentralo</h1></a>
+        </div>
+        <nav class="nav">
+
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar destinos">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="user-actions">
+            <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span class="text-register">Registrarse</span>
+                    <i class="fas fa-user user-icon"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
+                    <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                    <!-- agregar cuando ya este registrado que cambie a cerrar sesion -->
+                    <!-- a lugares visto -->
+                    <!-- mis calificaciones o asi -->
+                    <!-- ayuda -->
+                    <!-- informar sobre el lugar -->
+                </ul>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <!-- Menú de categorías -->
+    <nav class="nav-categories">
+        <ul id="submenu_categorias" class="category-list">
+            <li><a href="Restaurantes.html"><img src="img/restaurante.png" alt="">Restaurantes</a></li>
+            <li><a href="Arquitectura.html"><img src="img/piramide-maya.png" alt="">Arquitectura</a></li>
+        </ul>
+
+        <!-- <div id="accion_favoritos" class="user-actions">
+            <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span class="text-register">Favoritos</span>
+                    <i class="fas fa-heart user-icon"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#" onclick="showFavorites()">Ver Favoritos</a></li>
+                </ul>
+            </div>
+        </div> -->
+    </nav>
+
+    <!-- PARA CADA MODAL -->
+
+    <!-- poner un carrusell de inmagines 5 maximo -->
+    <!-- poner lo de las reseñas del usario -->
+    <!-- poner la califacion del usuario -->
+    <!-- poner la info de contacto -->
+    <!-- sus redes sociales -->
+    <!-- horario si tiene -->
+    <!-- poner boton de agregar a favoritos -->
+    <!-- Botn de calificar -->
+    <!-- y posiblemente un boton de visto donde se vaya a una lista de lugares visto que podria estar en el perfil -->
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="cardsContainer">
+            <!-- Las cards se generarán dinámicamente aquí -->
+        </div>
+        
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <div id="modalsContainer">
+        <!-- Los modales se generarán dinámicamente aquí -->
+    </div>
+
+    <!-- <footer class="footer">
+        <p>&copy; 2023 Airbnb, Inc.</p>
+    </footer> -->
+    <script src="scriptR.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Generar cards
+            document.getElementById('cardsContainer').innerHTML = generateCards();
+
+            // Generar modales
+            document.getElementById('modalsContainer').innerHTML = generateModals();
+        });
+    </script>
+</body>
+
+</html>
