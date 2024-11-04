@@ -302,6 +302,54 @@ body {
 /* --------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------- */
 
+/* ESTILO PARA COMENTARIOS */
+
+/* Estilo para el textarea */
+textarea {
+    width: 100%; /* Ocupa todo el ancho */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno */
+    resize: none; /* Deshabilitar el cambio de tamaño */
+}
+
+/* Estilo para la lista de comentarios */
+#commentsList1 {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0; /* Sin padding */
+}
+
+/* Estilo para cada comentario */
+.comment-item {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border: 1px solid #ddd; /* Borde gris */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado entre comentarios */
+    display: flex; /* Usar flexbox para alinear el icono y el texto */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilo para el icono de usuario */
+.comment-item .user-icon {
+    width: 24px; /* Ancho del icono */
+    height: 24px; /* Alto del icono */
+    margin-right: 10px; /* Espaciado entre el icono y el texto */
+}
+
+/* Estilo para el icono de usuario */
+.user-icon {
+    background-color: #49ACF8; /* Color de fondo del icono */
+    border-radius: 50%; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    display: flex; /* Usar flexbox para centrar el texto */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+
 /* ESTILO PARA BUSCADOR  */
 
 #resultsContainer {
