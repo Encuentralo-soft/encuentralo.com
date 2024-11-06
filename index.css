@@ -68,7 +68,11 @@ body {
     width: 300px;
 }
 
-
+/* ------------------- */
+#img_logo_empresa{
+    width: 100px;
+}
+/* ------------------- */
 
 /* Estilos personalizados para la separación */
 .carousel-inner .col {

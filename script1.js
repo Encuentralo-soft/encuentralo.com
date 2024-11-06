@@ -13,10 +13,10 @@ const destinations2 = [
         ],
         description: "La Pampa Un lugar donde el buen gusto y la tradición se encuentran para ofrecerte una experiencia gastronómica inigualable.",
         modalContent: "La Pampa, ubicada en la región occidental de El Salvador, es una vasta llanura que se extiende entre suaves colinas y montañas, ofreciendo paisajes rurales idílicos y un ambiente de tranquilidad. Esta región es conocida por su riqueza agrícola y ganadera, donde el terreno fértil y el clima templado permiten el cultivo de diversos productos, como el café y el maíz, así como la crianza de ganado. Además de su importancia productiva, La Pampa se ha convertido en un atractivo para los amantes del ecoturismo, que disfrutan de actividades como caminatas, paseos a caballo y la observación de la fauna y flora locales.",
-        mapIframe:'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.794952729498!2d-89.56709612582817!3d13.970807292187144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e895ff531abd%3A0x2d53bb3bf3e911f3!2sLa%20Pampa%20%E2%80%A2%20Plaza%20Kristal_Santa%20Ana!5e0!3m2!1ses-419!2ssv!4v1730669868110!5m2!1ses-419!2ssv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        comments: ["hermoso lugar","Un lugar espectacular"], // Array para almacenar comentarios
-        schedule:'Lunes-Viernes de 7:00am a 4:00pm',
-        contact:'7020-2029'
+        mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.794952729498!2d-89.56709612582817!3d13.970807292187144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e895ff531abd%3A0x2d53bb3bf3e911f3!2sLa%20Pampa%20%E2%80%A2%20Plaza%20Kristal_Santa%20Ana!5e0!3m2!1ses-419!2ssv!4v1730669868110!5m2!1ses-419!2ssv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        comments: ["hermoso lugar", "Un lugar espectacular"], // Array para almacenar comentarios
+        schedule: 'Lunes-Viernes de 7:00am a 4:00pm',
+        contact: '7020-2029'
     },
     {
         id: 2,
@@ -66,7 +66,7 @@ const destinations2 = [
         ],
         description: "Un majestuoso edificio neogótico que es símbolo religioso y arquitectónico de Santa Ana.",
         modalContent: "Celeste Imperio es un restaurante de alta categoría en Santa Ana, El Salvador, que se destaca por su ambiente refinado y su exquisita propuesta culinaria. Este lugar combina lo mejor de la gastronomía internacional con platos salvadoreños tradicionales, preparados con ingredientes frescos y de alta calidad. La atención al detalle, tanto en la presentación de los platillos como en el servicio al cliente, hacen de cada visita una experiencia memorable. Su decoración moderna y acogedora es ideal para celebraciones especiales o una cena romántica, ofreciendo además una excelente carta de vinos y postres para completar la experiencia gastronómica.",
-        mapIframe:'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.387575470488!2d-89.55850742582773!3d13.995018191617834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e8a5f49aa977%3A0x7262dcc39ef18312!2sCatedral%20de%20Nuestra%20Se%C3%B1ora%20Santa%20Ana!5e0!3m2!1ses-419!2ssv!4v1730669766327!5m2!1ses-419!2ssv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.387575470488!2d-89.55850742582773!3d13.995018191617834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e8a5f49aa977%3A0x7262dcc39ef18312!2sCatedral%20de%20Nuestra%20Se%C3%B1ora%20Santa%20Ana!5e0!3m2!1ses-419!2ssv!4v1730669766327!5m2!1ses-419!2ssv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         comments: [] // Array para almacenar comentarios
     },
     {
@@ -90,7 +90,7 @@ const destinations2 = [
 
 function generateCards2(destinations2) {
     let carouselHTML = '';
-    
+
     destinations2.forEach((dest, index) => {
         const isActive = index === 0 ? 'active' : '';
         carouselHTML += `
@@ -145,3 +145,103 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 // ----------------------------------------------------
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyBiDkAcwBpAvKI4vfNJDrIK7dmsOMljdjs",
+    authDomain: "encuentralo-dcb6e.firebaseapp.com",
+    projectId: "encuentralo-dcb6e",
+    storageBucket: "encuentralo-dcb6e.firebasestorage.app",
+    messagingSenderId: "788098610890",
+    appId: "1:788098610890:web:a247d301efe550fcd7a633",
+    // measurementId: "G-FGN5DMGE90"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+const analytics = getAnalytics(app);
+
+// ----------------------------------------------------------------------------
+
+// auth.js
+class AuthSystem {
+    constructor() {
+        this.auth = firebase.auth();
+        this.db = firebase.firestore();
+        
+        // Listener para cambios en el estado de autenticación
+        this.auth.onAuthStateChanged(user => {
+            if (user) {
+                console.log('Usuario logueado:', user.email);
+                this.updateUI(true);
+            } else {
+                console.log('Usuario no logueado');
+                this.updateUI(false);
+            }
+        });
+    }
+
+    // Registro de usuario
+    async register(email, password, username) {
+        try {
+            const userCredential = await this.auth.createUserWithEmailAndPassword(email, password);
+            
+            // Guardar información adicional del usuario
+            await this.db.collection('users').doc(userCredential.user.uid).set({
+                username: username,
+                email: email,
+                createdAt: firebase.firestore.FieldValue.serverTimestamp()
+            });
+
+            return userCredential.user;
+        } catch (error) {
+            console.error('Error en registro:', error);
+            throw error;
+        }
+    }
+
+    // Inicio de sesión
+    async login(email, password) {
+        try {
+            const userCredential = await this.auth.signInWithEmailAndPassword(email, password);
+            return userCredential.user;
+        } catch (error) {
+            console.error('Error en login:', error);
+            throw error;
+        }
+    }
+
+    // Cerrar sesión
+    async logout() {
+        try {
+            await this.auth.signOut();
+        } catch (error) {
+            console.error('Error en logout:', error);
+            throw error;
+        }
+    }
+
+    // Actualizar UI basado en estado de autenticación
+    updateUI(isLoggedIn) {
+        const loginForm = document.getElementById('loginForm');
+        const registerForm = document.getElementById('registerForm');
+        const commentForm = document.getElementById('commentForm');
+        const logoutButton = document.getElementById('logoutButton');
+
+        if (isLoggedIn) {
+            loginForm.style.display = 'none';
+            registerForm.style.display = 'none';
+            commentForm.style.display = 'block';
+            logoutButton.style.display = 'block';
+        } else {
+            loginForm.style.display = 'block';
+            registerForm.style.display = 'block';
+            commentForm.style.display = 'none';
+            logoutButton.style.display = 'none';
+        }
+    }
+}
