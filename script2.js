@@ -13,8 +13,8 @@ const destinations = [
         ],
         description: "La Pampa Un lugar donde el buen gusto y la tradición se encuentran para ofrecerte una experiencia gastronómica inigualable.",
         modalContent: "La Pampa, ubicada en la región occidental de El Salvador, es una vasta llanura que se extiende entre suaves colinas y montañas, ofreciendo paisajes rurales idílicos y un ambiente de tranquilidad. Esta región es conocida por su riqueza agrícola y ganadera, donde el terreno fértil y el clima templado permiten el cultivo de diversos productos, como el café y el maíz, así como la crianza de ganado. Además de su importancia productiva, La Pampa se ha convertido en un atractivo para los amantes del ecoturismo, que disfrutan de actividades como caminatas, paseos a caballo y la observación de la fauna y flora locales.",
-        mapIframe:'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.794952729498!2d-89.56709612582817!3d13.970807292187144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e895ff531abd%3A0x2d53bb3bf3e911f3!2sLa%20Pampa%20%E2%80%A2%20Plaza%20Kristal_Santa%20Ana!5e0!3m2!1ses-419!2ssv!4v1730669868110!5m2!1ses-419!2ssv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        comments: ["hermoso lugar","Un lugar espectacular"] // Array para almacenar comentarios
+        mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.794952729498!2d-89.56709612582817!3d13.970807292187144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e895ff531abd%3A0x2d53bb3bf3e911f3!2sLa%20Pampa%20%E2%80%A2%20Plaza%20Kristal_Santa%20Ana!5e0!3m2!1ses-419!2ssv!4v1730669868110!5m2!1ses-419!2ssv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        comments: ["hermoso lugar", "Un lugar espectacular"] // Array para almacenar comentarios
     },
     {
         id: 2,
@@ -64,7 +64,7 @@ const destinations = [
         ],
         description: "Un majestuoso edificio neogótico que es símbolo religioso y arquitectónico de Santa Ana.",
         modalContent: "Celeste Imperio es un restaurante de alta categoría en Santa Ana, El Salvador, que se destaca por su ambiente refinado y su exquisita propuesta culinaria. Este lugar combina lo mejor de la gastronomía internacional con platos salvadoreños tradicionales, preparados con ingredientes frescos y de alta calidad. La atención al detalle, tanto en la presentación de los platillos como en el servicio al cliente, hacen de cada visita una experiencia memorable. Su decoración moderna y acogedora es ideal para celebraciones especiales o una cena romántica, ofreciendo además una excelente carta de vinos y postres para completar la experiencia gastronómica.",
-        mapIframe:'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.387575470488!2d-89.55850742582773!3d13.995018191617834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e8a5f49aa977%3A0x7262dcc39ef18312!2sCatedral%20de%20Nuestra%20Se%C3%B1ora%20Santa%20Ana!5e0!3m2!1ses-419!2ssv!4v1730669766327!5m2!1ses-419!2ssv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.387575470488!2d-89.55850742582773!3d13.995018191617834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e8a5f49aa977%3A0x7262dcc39ef18312!2sCatedral%20de%20Nuestra%20Se%C3%B1ora%20Santa%20Ana!5e0!3m2!1ses-419!2ssv!4v1730669766327!5m2!1ses-419!2ssv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         comments: [] // Array para almacenar comentarios
     },
     {
@@ -114,7 +114,10 @@ const destinations = [
             "img/arquelogicos/tazumal 5.jpg"
         ],
         description: "Es un fascinante sitio arqueológico,con sus impresionantes estructuras mayas, incluyendo pirámides y plataformas ceremoniales.",
-        modalContent:"Este lugar es un testimonio de la rica herencia cultural de la región y ofrece a los visitantes la oportunidad de explorar la historia antigua de las civilizaciones mesoamericanas.El Tazumal es uno de los sitios arqueológicos más importantes de El Salvador, situado en la ciudad de Santa Ana. Este antiguo asentamiento maya data de aproximadamente 1000 d.C. y es conocido por sus impresionantes estructuras, que incluyen una pirámide escalonada y varias plataformas ceremoniales. La arquitectura del Tazumal refleja la sofisticación de la cultura maya, con detalles intrincados y una planificación urbana que resalta su importancia en la región durante su apogeo.",
+        modalContent: "Este lugar es un testimonio de la rica herencia cultural de la región y ofrece a los visitantes la oportunidad de explorar la historia antigua de las civilizaciones mesoamericanas.El Tazumal es uno de los sitios arqueológicos más importantes de El Salvador, situado en la ciudad de Santa Ana. Este antiguo asentamiento maya data de aproximadamente 1000 d.C. y es conocido por sus impresionantes estructuras, que incluyen una pirámide escalonada y varias plataformas ceremoniales. La arquitectura del Tazumal refleja la sofisticación de la cultura maya, con detalles intrincados y una planificación urbana que resalta su importancia en la región durante su apogeo.",
+        contact: '6064948',
+        // Agregar horarios
+        schedule:'Lunes: Cerrado,    Martes-Domingo: 9:00 AM - 4:00 PM',
         mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.647239869199!2d-89.67673978970667!3d13.979590786379882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62eb1231263fe7%3A0x237b667cc6f57814!2sParque%20Arqueol%C3%B3gico%20Tazumal!5e0!3m2!1ses!2ssv!4v1730694592390!5m2!1ses!2ssv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         comments: [] // Array para almacenar comentarios
     },
@@ -356,7 +359,7 @@ const destinations = [
     //     mapIframe: '',
     //     comments: [] // Array para almacenar comentarios
     // },
-    
+
 
     // ... Agrega el resto de los destinos aquí
 ];
@@ -392,6 +395,10 @@ function generateCards() {
 
     return carouselHTML;
 }
+
+
+// ----------------------------------------------------
+// ----------------------------------------------------
 
 function generateModals() {
     return destinations.map(dest => `
@@ -437,6 +444,18 @@ function generateModals() {
                         <div class="modal-text">
                             ${dest.modalContent}
                         </div>
+                         <!-- Si tienes información de contacto -->
+                            <div class="info-contacto">
+                                <i class="fas fa-phone"></i>
+                                <span>${dest.contact || 'Contacto no disponible'}</span>
+                            </div>
+
+                            <!-- Si tienes horarios -->
+                            <div class="horarios">
+                                <span>Horario:</span>
+                                <span>${dest.schedule || 'Horario no disponible'}</span>
+                            </div>
+
                         <!-- Mapa -->
                         <div class="map-container">
                             ${dest.mapIframe}
@@ -466,7 +485,7 @@ function generateModals() {
 function addComment(destId) {
     const commentInput = document.getElementById(`commentInput${destId}`);
     const commentText = commentInput.value.trim();
-    
+
     if (commentText === '') {
         alert('Por favor, escribe un comentario antes de enviar.');
         return;
@@ -503,15 +522,15 @@ function updateCommentsList(destId) {
 
 // --------------------------------------------------------------------
 // mapa 
-function iniciarMap(){
-    var coord = {lat:-34.5956145 ,lng: -58.4431949};
-    var map = new google.maps.Map(document.getElementById('map'),{
-      zoom: 10,
-      center: coord
+function iniciarMap() {
+    var coord = { lat: -34.5956145, lng: -58.4431949 };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: coord
     });
     var marker = new google.maps.Marker({
-      position: coord,
-      map: map
+        position: coord,
+        map: map
     });
 }
 
@@ -535,7 +554,7 @@ function searchDestinations() {
         return;
     }
 
-    const results = destinations.filter(dest => 
+    const results = destinations.filter(dest =>
         dest.title.toLowerCase().includes(filter)
     );
 
@@ -550,14 +569,14 @@ function searchDestinations() {
             const resultItem = document.createElement('div');
             resultItem.className = 'result-item';
             resultItem.setAttribute('data-id', dest.id);
-            
+
             const img = document.createElement('img');
             img.src = dest.image;
             img.alt = dest.title;
-            
+
             const span = document.createElement('span');
             span.textContent = dest.title;
-            
+
             resultItem.appendChild(img);
             resultItem.appendChild(span);
 
@@ -591,7 +610,7 @@ function clearSearchAndResults() {
 function handleKeyNavigation(event) {
     const resultsContainer = document.getElementById('resultsContainer');
     const items = resultsContainer.getElementsByClassName('result-item');
-    
+
     if (items.length === 0) return;
 
     if (event.key === 'ArrowDown') {
@@ -635,16 +654,38 @@ document.getElementById('searchInput').addEventListener('keydown', handleKeyNavi
 document.getElementById('searchButton').addEventListener('click', searchDestinations);
 
 // Modifica el event listener del botón de búsqueda
-document.getElementById('searchButton').addEventListener('click', function(e) {
+document.getElementById('searchButton').addEventListener('click', function (e) {
     e.preventDefault(); // Prevenir comportamiento por defecto si es necesario
     const input = document.getElementById('searchInput');
-    
+
     if (input.value.trim() !== '') {
         searchDestinations();
     } else {
         const resultsContainer = document.getElementById('resultsContainer');
         resultsContainer.style.display = 'none';
     }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Generar cards para el primer carrusel
+    document.getElementById('cardsContainer1').innerHTML = generateCards(destinations1);
+
+    // Generar cards para el segundo carrusel
+    document.getElementById('cardsContainer2').innerHTML = generateCards(destinations2);
+
+    // Inicializar el primer carrusel con un intervalo de 5 segundos
+    new bootstrap.Carousel(document.getElementById('carouselExample1'), {
+        interval: 6000, // 5 segundos
+        pause: 'hover',
+        ride: 'carousel'
+    });
+
+    // Inicializar el segundo carrusel con un intervalo de 7 segundos
+    new bootstrap.Carousel(document.getElementById('carouselExample2'), {
+        interval: 8000, // 7 segundos
+        pause: 'hover',
+        ride: 'carousel'
+    });
 });
 
 // Agregar evento de búsqueda

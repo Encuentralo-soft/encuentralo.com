@@ -1,0 +1,232 @@
+/* Estilos generales para el carrusel */
+.carousel-inner {
+    padding: 1rem;
+}
+
+.carousel-item .row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para móviles (una card) */
+@media (max-width: 767px) {
+    .carousel-item .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Estilos para tablets (dos cards) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-item .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Estilos para escritorio (tres cards) */
+@media (min-width: 992px) {
+    .carousel-item .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+/* Asegura que todas las cards tengan la misma altura */
+.card {
+    height: 100%;
+}
+
+/* Ajusta el tamaño de la imagen */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+.card {
+    transition: all 0.3s ease;
+    overflow: hidden; /* Para el efecto de zoom en la imagen */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(18, 109, 212, 0.301);
+}
+
+.card-img-top {
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Efecto en el botón */
+.card .btn {
+    transition: all 0.3s ease;
+}
+
+.card:hover .btn {
+    background-color: #49ACF8;
+    transform: translateY(-3px);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Estilos para el contenido del modal */
+.modal-content {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Estilos para el encabezado del modal */
+.modal-header {
+    background: linear-gradient(to right, #49ACF8, #68cbf7);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 1.5rem;
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos para el cuerpo del modal */
+.modal-body {
+    padding: 2rem;
+}
+
+/* Estilos para el texto principal */
+.modal-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    padding: 1.5rem;
+    background: #eff6fc;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(4, 137, 245, 0.123);
+}
+
+/* Estilos para párrafos dentro del texto */
+.modal-text p {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+}
+
+/* Estilos para títulos dentro del texto */
+.modal-text h3 {
+    color: #49ACF8;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Estilos para listas si las hay */
+.modal-text ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.modal-text li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Estilos para destacar información importante */
+.info-destacada {
+    background-color: #e8f4fe;
+    padding: 1rem;
+    border-left: 4px solid #49ACF8;
+    margin: 1rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Estilos para secciones específicas */
+.seccion-info {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilos para información de contacto */
+.info-contacto {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem;
+    background: #eff6fc;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+}
+
+.info-contacto i {
+    color: #49ACF8;
+    font-size: 1.2rem;
+}
+
+/* Estilos para horarios si los hay */
+.horarios {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background: #eff6fc;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Efectos hover para elementos interactivos */
+.modal-text a {
+    color: #49ACF8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.modal-text a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .modal-text {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+}
+
+/* Estilos para citas o testimonios */
+.testimonio {
+    font-style: italic;
+    color: #666;
+    padding: 1rem;
+    border-left: 3px solid #49ACF8;
+    margin: 1rem 0;
+    background: #f8f9fa;
+}
+
+/* Estilos para etiquetas o badges */
+.etiqueta {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: #49ACF8;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin: 0.2rem;
+}
